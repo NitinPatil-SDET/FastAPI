@@ -145,3 +145,12 @@ use for data validation
 fastapi, yaml, data science and ml pipeline
 WHY - 
 type hunting
+data validation as (negative age)
+step1 : build pynatic class and define ideal schema of the data
+
+Step2: instaniate the model with raw input data (useally a dict or json like stucure)
+    automatily validate data and correct into python type
+
+Step3: Pass the validate model object to fuction or use it through your codebase
+    clean, type-safe and logically valid data 
+    
