@@ -10,8 +10,8 @@ patient_info = {
     'name': 'Nitin',
     'age': '27',
     'weight':45.5,
-    married:bool,
-    allergies:List[str],
+    'married':bool,
+    'allergies':List[str],
     
 }
 
