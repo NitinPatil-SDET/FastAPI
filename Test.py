@@ -42,3 +42,11 @@ for ch in s3:
         freq[ch]=1
 for key, value in freq.items():
     print(key, ' = ', value)
+
+#Remove Duplicates from List
+arr = [1, 2, 2, 3, 4, 4, 5]
+result =[]
+for num in arr:
+    if num not in result:
+        result.append(num)
+print(result)
