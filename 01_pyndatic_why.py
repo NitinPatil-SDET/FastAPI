@@ -1,12 +1,12 @@
-from pydantic import BaseModel, EmailStr, AnyUrl
-from typing import List, Dict, Optional
+from pydantic import BaseModel, EmailStr, AnyUrl, Field
+from typing import List, Dict, Optional, Annotated
 
 class Patient(BaseModel):
-    name: str
+    name: Annotated[str, Field(max_length=50, title='Name of the patient')]
     email:EmailStr
     linkdn_url: AnyUrl
     age: int
-    weight: float
+    weight: Annotated[float, Field(gt=0, strict=True)]
     married: bool=False
     allergies: Optional[List[str]]=None
     contact_details: Dict[str, str]
@@ -16,7 +16,7 @@ patient_info = {
     'linkdn_url':'https://github.com/NitinPatil-SDET',
     'age': '27',
     'email':'golu@test.com',
-    'weight':45.5,
+    'weight':55.5,
     #'married':True,
     #'allergies':["Peanuts", "Dust", "Pollen"],
     'contact_details':{'email':'abc@test.com','phone':'9879879876'}

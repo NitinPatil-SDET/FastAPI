@@ -157,4 +157,14 @@ Step3: Pass the validate model object to fuction or use it through your codebase
 How to set required field, optional field, default field.
 to verify email - EmailStr
 to verify URL - AnyUrl
+Data Validation - Field(gt=0), Field(max_length=5)
+using field fuction we can attach metadat for the user 
+
+--usage of Annotated
+
+--  field_validator - for modified Business use case then use fieldValidator
+                    - If we want transformation like name in upper case
     
+    field_validator operate in 2 modes(default mode = after)
+        1.before mode -  
+        2.After mode -
