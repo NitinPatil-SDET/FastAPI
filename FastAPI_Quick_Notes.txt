@@ -153,4 +153,8 @@ Step2: instaniate the model with raw input data (useally a dict or json like stu
 
 Step3: Pass the validate model object to fuction or use it through your codebase
     clean, type-safe and logically valid data 
+
+How to set required field, optional field, default field.
+to verify email - EmailStr
+to verify URL - AnyUrl
     
