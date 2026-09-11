@@ -170,4 +170,16 @@ using field fuction we can attach metadat for the user
         2.After mode -
 --model_validator - we can apply custom validation on complete busine model
 
---Computed fileds : 
+--Computed fileds : we dont tak input from user, perfoem action exiting field and crate computed field 
+
+--nested pydatic model 
+        1. Better organisation of Data
+        2. reusable model
+        3. readability 
+        4. validation
+
+-->model_dump
+--> model_dump_json
+--> model_dump(include=[])
+--> model_dump(exclude=[])
+--> model_dump(exclude_unset=)
