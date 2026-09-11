@@ -140,46 +140,15 @@ order desc/asce (we can put it as option)
 ? ke baad start quiry parameter
 cach paratameter is key-value pair
 ---------------------------------------
-Paydentic 
-use for data validation
-fastapi, yaml, data science and ml pipeline
-WHY - 
-type hunting
-data validation as (negative age)
-step1 : build pynatic class and define ideal schema of the data
 
-Step2: instaniate the model with raw input data (useally a dict or json like stucure)
-    automatily validate data and correct into python type
+POST
+------
+1. Take data from the client
+client -->POST--> server --> client
+creating new patient we have provide Request body/payload
+Request body -> 
 
-Step3: Pass the validate model object to fuction or use it through your codebase
-    clean, type-safe and logically valid data 
+2. Validate the Data using pydantic 
 
-How to set required field, optional field, default field.
-to verify email - EmailStr
-to verify URL - AnyUrl
-Data Validation - Field(gt=0), Field(max_length=5)
-using field fuction we can attach metadat for the user 
+3, new record to be added in database
 
---usage of Annotated
-
---  field_validator - for modified Business use case then use fieldValidator
-                    - If we want transformation like name in upper case
-    
-    field_validator operate in 2 modes(default mode = after)
-        1.before mode -  
-        2.After mode -
---model_validator - we can apply custom validation on complete busine model
-
---Computed fileds : we dont tak input from user, perfoem action exiting field and crate computed field 
-
---nested pydatic model 
-        1. Better organisation of Data
-        2. reusable model
-        3. readability 
-        4. validation
-
--->model_dump
---> model_dump_json
---> model_dump(include=[])
---> model_dump(exclude=[])
---> model_dump(exclude_unset=)
