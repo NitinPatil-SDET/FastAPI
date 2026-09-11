@@ -13,13 +13,7 @@ class Patient(BaseModel):
     #allergies: [List[str]]
     contact_details: Dict[str, str]
 
-    @model_validator(mode='after')
-    def validate_emergency_contact(self):
-        if self.age > 60 and "emergency" not in self.contact_details:
-            raise ValueError(
-                "Patient older than 60 must have an emergency contact"
-            )
-        return self
+
 
 
     

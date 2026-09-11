@@ -168,3 +168,6 @@ using field fuction we can attach metadat for the user
     field_validator operate in 2 modes(default mode = after)
         1.before mode -  
         2.After mode -
+--model_validator - we can apply custom validation on complete busine model
+
+--Computed fileds : 
