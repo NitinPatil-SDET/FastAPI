@@ -151,4 +151,9 @@ Request body ->
 2. Validate the Data using pydantic 
 
 3, new record to be added in database
+---------------------------------------------
+
+PUT(Update):
+patient ID and request ID in input
+we have create new pydantic model 
 
