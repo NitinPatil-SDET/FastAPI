@@ -50,7 +50,7 @@ def about():
 
 #helper function to load data from json
 def load_data():
-    with open('patients.json', 'r') as f:
+    with open('patient.json', 'r') as f:
         data=json.load(f)
     return data
 
@@ -78,7 +78,7 @@ def view_patient(patient_id:str = Path(..., descripation='ID of the patient in D
 
 #Create new end point to demostrate quri parameter
 @app.get('/sort')
-def sort_patients(sort_by: str = Query(..., description='Sort on the basic of height, weight, age or bmi'), 
+def sort_patient(sort_by: str = Query(..., description='Sort on the basic of height, weight, age or bmi'), 
                   order_by:str=Query('asc',description='Sort in Asceding and desecnding order')):
 
     valid_fields=['height','weight','bmi', 'age']
